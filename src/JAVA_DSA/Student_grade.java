@@ -28,6 +28,6 @@ public class Student_grade {
         {
             System.out.println("Student grade is F");
         }
-        sc.close();
+      
     }
 }

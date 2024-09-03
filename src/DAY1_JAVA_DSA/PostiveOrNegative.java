@@ -19,5 +19,6 @@ public class PostiveOrNegative {
         {
             System.out.println("The given number is Negative");
         }
+        sc.close();
     }
 }

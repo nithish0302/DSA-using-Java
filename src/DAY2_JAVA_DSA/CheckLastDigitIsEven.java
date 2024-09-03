@@ -1,6 +1,6 @@
 package DAY2_JAVA_DSA;
 
-import java.util.*;;
+import java.util.Scanner;
 public class CheckLastDigitIsEven {
     
     public static void main(String[] args) {

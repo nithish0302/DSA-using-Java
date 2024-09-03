@@ -1,7 +1,16 @@
 {
-    "java.project.sourcePaths": ["src"],
+    "java.project.sourcePaths": [
+        "src"
+    ],
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
         "lib/**/*.jar"
-    ]
+    ],
+    "java.imports.autoAddMissingImports": true,
+    "editor.formatOnSave": true,
+    "java.saveActions.organizeImports": true,
+    "java.format.settings.url": "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml",
+    "java.format.settings.profile": "GoogleStyle",
+    "java.imports.gradle.enabled": true,
+    "java.imports.maven.enabled": true
 }

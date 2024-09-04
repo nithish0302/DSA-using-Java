@@ -33,5 +33,6 @@ public class ContainsDuplicate {
      {
         System.out.println("Not Found");
      }
+     sc.close();
     }
 }

@@ -9,7 +9,7 @@ public class SecondLargest {
         int n = sc.nextInt();
         int arr[] = new int[n];
         
-        System.out.println("Enter the array element");
+        System.out.println( "Enter the array element");
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }

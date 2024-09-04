@@ -18,5 +18,6 @@ public class SmallestElement {
                 min = arr[i];
         }
         System.out.println(min);
+        sc.close();
     }
 }

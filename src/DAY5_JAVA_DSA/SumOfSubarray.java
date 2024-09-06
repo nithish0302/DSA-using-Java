@@ -9,10 +9,14 @@ public class SumOfSubarray {
 
         System.out.println("Enter the array size");
         int n = sc.nextInt();
-        // System.out.println("Enter the col size");
-        // int col=sc.nextInt();
+
         int arr[] = scan(n);
-        subarr(arr, n);
+        // subarr(arr, n);
+        System.out.println("Enter the index from");
+        int i = sc.nextInt();
+        System.out.println("Enter the which will be the last index");
+        int j = sc.nextInt();
+        prefixMethod(arr, n, i, j);
     }
 
     public static int[] scan(int n) {
@@ -33,6 +37,18 @@ public class SumOfSubarray {
             sum += arr[i];
         }
         System.out.println(sum);
+    }
+
+    public static void prefixMethod(int arr[], int n, int i, int j) {
+
+        int sum = 0;
+        for (int k = 0; k < n; k++) {
+            sum += arr[k];
+            arr[k] = sum;
+
+        }
+        System.out.println(arr[j] - arr[i - 1]);
+        sc.close();
     }
 
 }

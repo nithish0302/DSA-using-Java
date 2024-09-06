@@ -1,4 +1,4 @@
-package DAY_4JAVA_DSA;
+package DAY4_JAVA_DSA;
 
 import java.util.*;
         

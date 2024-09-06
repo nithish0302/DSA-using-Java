@@ -3,8 +3,10 @@ package DAY_4JAVA_DSA;
 import java.util.*;
 
 public class MatrixMul {
+    static Scanner sc = new Scanner(System.in);
+
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+
         System.out.println("Enter the matrix1 row");
         int row = sc.nextInt();
         System.out.println("Enter the matrix1 col");
@@ -16,10 +18,11 @@ public class MatrixMul {
         int col1 = sc.nextInt();
         int arr2[][] = mat(row1, col1);
         mul(arr1, row, col, arr2, row1, col1);
+
     }
 
     public static int[][] mat(int row, int col) {
-        Scanner sc = new Scanner(System.in);
+
         int arr[][] = new int[row][col];
         System.out.println("Enter the array element");
         for (int i = 0; i < row; i++) {
@@ -56,5 +59,7 @@ public class MatrixMul {
             }
             System.out.println();
         }
+        sc.close();
     }
+
 }

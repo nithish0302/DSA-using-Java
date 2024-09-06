@@ -1,10 +1,11 @@
 package DAY_4JAVA_DSA;
 
 import java.util.*;
-
+        
 public class TwoDArray {
+    static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+       
         System.out.println("Enter the row size");
         int row = sc.nextInt();
         System.out.println("Enter the col size");
@@ -42,7 +43,7 @@ public class TwoDArray {
     }
 
     public static int[][] createArray(int row, int col) {
-        Scanner sc = new Scanner(System.in);
+     //   Scanner sc = new Scanner(System.in);
         int arr[][] = new int[row][col];
         System.out.println("Enter the array element");
         for (int i = 0; i < row; i++) {
@@ -117,5 +118,6 @@ public class TwoDArray {
         }
         System.out.println("The transverse matrix is: ");
         print(arr1);
+        sc.close();
     }
 }

@@ -47,7 +47,11 @@ public class SumOfSubarray {
             arr[k] = sum;
 
         }
-        System.out.println(arr[j] - arr[i - 1]);
+        if (i == 0) {
+            System.out.println(arr[j]);
+        } else
+
+            System.out.println(arr[j] - arr[i - 1]);
         sc.close();
     }
 

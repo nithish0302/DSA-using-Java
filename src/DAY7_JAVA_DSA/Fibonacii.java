@@ -6,16 +6,17 @@ public class Fibonacii {
     static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
-        System.out.println("Enter the n value");
+        System.out.println("Enter the number");
         int n = sc.nextInt();
-        System.out.println(fact(n));
-
+        System.out.println(fibo(n));
     }
 
-    public static int fact(int n) {
-        if (n == 1 || n == 0) {
+    public static int fibo(int n) {
+        if (n == 0)
+            return 0;
+        if (n == 1)
             return 1;
-        }
-        return n * fact(n - 1);
+
+        return fibo(n - 1) + fibo(n - 2);
     }
 }

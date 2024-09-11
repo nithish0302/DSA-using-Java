@@ -2,7 +2,7 @@ package DAY9_JAVA_DSA;
 
 import java.util.*;
 
-public class Subsequence {
+public class LongestContinuousSubarray {
     static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
         System.out.println("Enter the array size");

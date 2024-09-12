@@ -26,6 +26,7 @@ public class LongestContinuousSubarray {
             }
         }
         System.out.println(count + 1);
+        sc.close();
     }
 
 }

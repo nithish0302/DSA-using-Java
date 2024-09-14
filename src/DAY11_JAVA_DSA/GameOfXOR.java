@@ -17,7 +17,7 @@ public class GameOfXOR {
             arr[i] = sc.nextInt();
         }
 
-         //method 1
+        // method 1
         int totalxor = 0;
         // List<Integer>li=new ArrayList<Integer>();
         for (int i = 0; i < n; i++) {
@@ -31,21 +31,7 @@ public class GameOfXOR {
         }
         System.out.println("The answer is");
         System.out.println(totalxor);
-
-        //method 2
-        int xo=0;
-        int tot=0
-        for(int i=0;i<n;i++)
-        {
-            for(int j=i;j<n;j++)
-            {
-                
-                for(int k=i;k<=j;k++)
-                {
-                    
-                }
-            }
-        }
+        sc.close();
 
     }
 }

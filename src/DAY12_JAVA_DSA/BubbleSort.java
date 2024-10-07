@@ -1,6 +1,5 @@
 package DAY12_JAVA_DSA;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class BubbleSort {

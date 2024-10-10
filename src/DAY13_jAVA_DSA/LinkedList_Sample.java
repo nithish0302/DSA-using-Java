@@ -103,5 +103,6 @@ public class LinkedList_Sample {
         l1.insertPosition(85, 2);
         l1.print();
         System.out.println("Element present at " + l1.getElement(2));
+        System.out.println("Head Element is" +head.val);
     }
 }

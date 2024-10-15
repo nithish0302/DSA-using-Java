@@ -4,10 +4,10 @@ import java.util.*;
  * NextGreaterElement
  */
 public class NextSmallestElement {
+    static Scanner sc=new Scanner(System.in);
 
     public static void main(String[] args) {
         int n;
-        Scanner sc=new Scanner(System.in);
         System.out.println("Enter the size of arr");
         n=sc.nextInt();
         System.out.println("Enter the array Element");
@@ -36,6 +36,7 @@ public class NextSmallestElement {
 
             st.push(arr[i]);
         }
+        sc.close();
         return res;
     }
 }

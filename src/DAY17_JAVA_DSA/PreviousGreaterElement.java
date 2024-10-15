@@ -3,7 +3,7 @@ import java.util.*;
 /**
  * NextGreaterElement
  */
-public class NextGreaterElement {
+public class PreviousGreaterElement {
 
     public static void main(String[] args) {
         int n;
@@ -14,11 +14,11 @@ public class NextGreaterElement {
         int arr[]=new int[n];
         for(int i=0;i<n;i++)
         arr[i]=sc.nextInt();
-        int res[]=nextgreaterelement(arr);
+        int res[]=previousgreaterelement(arr);
         System.out.println(Arrays.toString(res));
 
     }
-    public static int[] nextgreaterelement(int arr[])
+    public static int[] previousgreaterelement(int arr[])
     {
         int n=arr.length;
         int res[]=new int[n];

@@ -3,7 +3,7 @@ import java.util.*;
 /**
  * NextGreaterElement
  */
-public class NextGreaterElement {
+public class NextSmallestElement {
 
     public static void main(String[] args) {
         int n;
@@ -14,18 +14,18 @@ public class NextGreaterElement {
         int arr[]=new int[n];
         for(int i=0;i<n;i++)
         arr[i]=sc.nextInt();
-        int res[]=nextgreaterelement(arr);
+        int res[]=nextSmallestelement(arr);
         System.out.println(Arrays.toString(res));
 
     }
-    public static int[] nextgreaterelement(int arr[])
+    public static int[] nextSmallestelement(int arr[])
     {
         int n=arr.length;
         int res[]=new int[n];
         Stack<Integer> st = new Stack<>();
-        for(int i=0;i<n;i++)
+        for(int i=n-1;i>=0;i--)
         {
-            while(!st.isEmpty() &&st.peek()<=arr[i])
+            while(!st.isEmpty() &&st.peek()>=arr[i])
             {
                 st.pop();
             }
